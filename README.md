@@ -1,6 +1,6 @@
 # ReaDISH
 
-Data and codes for the paper "Reaction Prediction via Interaction Modeling of Symmetric Difference Shingle Sets".
+Data and codes for the paper "Reaction Prediction via Interaction Modeling of Symmetric Difference Shingle Sets" (NeurIPS 2025).
 
 ## Requirements
 
@@ -55,7 +55,7 @@ python downstream.py --devices 0,1,2,3 --batch_size 4 --accumulate_grad_batches 
 @inproceedings{shi2025reaction,
   title={Reaction Prediction via Interaction Modeling of Symmetric Difference Shingle Sets},
   author={Shi, Runhan and Chen, Letian and Yu, Gufeng and Yang, Yang},
-  booktitle={NeurIPS},
+  booktitle={Proceedings of the Thirty-ninth Annual Conference on Neural Information Processing Systems (NeurIPS)},
   year={2025}
 }
 ```
