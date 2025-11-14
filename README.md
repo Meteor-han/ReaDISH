@@ -2,6 +2,12 @@
 
 Data and codes for the paper "Reaction Prediction via Interaction Modeling of Symmetric Difference Shingle Sets" (NeurIPS 2025).
 
+## Overview
+
+ReaDISH is a new reaction prediction framework designed to overcome two persistent limitations in machine-learning-based organic reaction modeling: sensitivity to input order and the lack of explicit interaction modeling between key molecular substructures. It encodes reactions using symmetric-difference shingle fragments, which remove order sensitivity and precisely capture structural changes between reactants and products. To further model the mechanistic essence of reactivity, ReaDISH introduces a structural-geometric interaction attention mechanism that integrates geometric distance, structural similarity, and chemical connectivity at the substructure level. 
+
+<img src="https://github.com/Meteor-han/ReaDISH/model.png" alt="model" style="zoom:30%;" />
+
 ## Requirements
 
 We implement our model on `Python 3.10`. These packages are mainly used:
