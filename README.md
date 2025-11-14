@@ -33,9 +33,22 @@ We filtered reactions from USPTO (https://figshare.com/articles/dataset/Chemical
 
 The downstream datasets (7 sources) and the generated coordinates (`/ds_confs`) are stored in `/downstream_datasets`.
 
+Raw datasets can be downloaded from:
+
+- BH and SM datasets: https://github.com/rxn4chemistry/rxn_yields/tree/master/data.
+- NiCOlit dataset: https://github.com/truejulosdu13/NiCOlit/tree/master/data.
+- ELN dataset: https://github.com/nsf-c-cas/yield-rxn/tree/master/data/az.
+- N,S-acetal and C-heteroatom datasets: https://zivgitlab.uni-muenster.de/m_kueh11/fp-dm-tool.
+- USPTO_TPL dataset: https://github.com/rxn4chemistry/rxnfp/tree/master/data. Please download the USPTO dataset from the link provided, as it is too large to include in the GitHub repository.
+
 ## Shingle generation
 
-The code for shingle generation is stored in `/model/generate_shingling.py` (for the pre-training dataset) and `/model/utils.py`. The pipeline is adapted from https://github.com/reymond-group/drfp.
+The code for shingle generation is stored in `/model/generate_shingling.py` (for the pre-training dataset) and `/model/utils.py`. The pipeline is adopted from https://github.com/reymond-group/drfp.
+
+```
+mappings = ShinglingEncoder.encode([one_reaction_smiles], radius=3, show_progress_bar=False, atom_index_mapping=True, root_central_atom=False, symmetric_id=symmetric_id)[0]
+# symmetric_id, 0: symmetric difference, 1: reactant shingles only, 2: union shingles
+```
 
 ## Experiments
 
