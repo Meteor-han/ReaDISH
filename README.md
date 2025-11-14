@@ -21,11 +21,15 @@ rxnfp                0.1.0
 
 ### Pre-training dataset
 
-To be filled.
+We filtered reactions from USPTO (https://figshare.com/articles/dataset/Chemical_reactions_from_US_patents_1976-Sep2016_/5104873) and CJHIF (https://github.com/jshmjs45/data_for_chem). The code to cluster reactions based on DRFP fingerprints and Kmeans is stored in `/data/cluster.py`.
 
 ### Downstream dataset
 
 The downstream datasets (7 sources) and the generated coordinates (`/ds_confs`) are stored in `/downstream_datasets`.
+
+## Shingle generation
+
+The code for shingle generation is stored in `/model/generate_shingling.py` (for the pre-training dataset) and `/model/utils.py`. The pipeline is adapted from https://github.com/reymond-group/drfp.
 
 ## Experiments
 
