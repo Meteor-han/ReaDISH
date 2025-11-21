@@ -1,5 +1,8 @@
 # ReaDISH
 
+[![Neurips 2025](https://neurips.cc/static/core/img/neurips-navbar-logo.svg)](https://neurips.cc/virtual/2025/loc/san-diego/poster/119078)
+[![arXiv](https://img.shields.io/badge/arXiv-2511.06356-b31b1b.svg)](https://arxiv.org/pdf/2511.06356)
+
 Data and codes for the paper "Reaction Prediction via Interaction Modeling of Symmetric Difference Shingle Sets" (NeurIPS 2025).
 
 ## Overview
